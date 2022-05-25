@@ -1,15 +1,13 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Project Name
 
-> Description the project.
-
+Portfolio: setup and mobile version skeleton
 
 ## Built With
 
-- Major languages
+- html & CSS 
 - Frameworks
-- Technologies used
+- vs code, github, gitbash
+- Figma hi-fi tool
 
 ## Live Demo (if available)
 
@@ -18,11 +16,11 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**I used HTML, CSS to implement the Mobile Skeleton Project, implemented the GitHub flow, and adopted best practices in the process of documenting the project.**
 
 
-To get a local copy up and running follow these simple example steps.
+## To request a local copy of my project, please follow these steps
+Request this url: https://github.com/ogagaoghene/v1-mobile-web-app in your web browser. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side. Select download Zip option from drop down menu. Once the download is complete you will be able to access my project locally.
 
 ### Prerequisites
 
@@ -37,20 +35,13 @@ To get a local copy up and running follow these simple example steps.
 ### Deployment
 
 
-
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ogagaoghene)
+- Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ogagaoghene-esi-7a478647)
 
 ## 🤝 Contributing
 
