@@ -114,7 +114,7 @@ body {
   gap: 15px;
 }
 
-.btn {
+.langs {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -122,6 +122,10 @@ body {
   list-style-type: none;
   text-decoration: none;
   top: 10px;
+}
+
+.langs ul {
+  list-style-type: none;
 }
 
 .btn a {
@@ -159,6 +163,34 @@ body {
   line-height: 16px;
   color: #6070ff;
   padding: 5px;
+}
+
+.langs ul a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 283px;
+  height: 66.72px;
+  margin: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px;
+  list-style-type: none;
+  text-decoration: none;
+  top: 10px;
 }
 
 .btn a:hover {
@@ -199,6 +231,14 @@ body {
   justify-content: start;
   left: 24px;
   padding-top: 114px;
+}
+
+.profile-card .header-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .profile-card p {
