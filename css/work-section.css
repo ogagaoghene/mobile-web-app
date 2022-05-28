@@ -221,9 +221,12 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 2px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   border-top-right-radius: 68px;
-  padding: 8px;
+  padding: 0, 10px, 0, 10px;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 8px;
 }
 
 .profile-card .header-text {
