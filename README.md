@@ -1,6 +1,6 @@
 # Project Name
 
-Portfolio: setup and mobile version skeleton
+Portfolio: Mobile Version
 
 ## Built With
 
@@ -16,7 +16,7 @@ Portfolio: setup and mobile version skeleton
 
 ## Getting Started
 
-**I used HTML, CSS to implement the Mobile Skeleton Project, implemented the GitHub flow, and adopted best practices in the process of documenting the project.**
+**I used HTML, CSS to implement the Mobile Version of the project, implemented the GitHub flow, and adopted best practices in the process of documenting the project.**
 
 
 ## To request a local copy of my project, please follow these steps
