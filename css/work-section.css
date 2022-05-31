@@ -321,3 +321,13 @@ body {
   height: 6px;
   color: #acb763;
 }
+
+.contact-card {
+  width: 375px;
+  height: 779px;
+}
+form > * {
+  display: flex;
+  flex-direction: column;
+  border: 1px red solid;
+}
