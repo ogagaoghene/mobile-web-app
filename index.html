@@ -263,45 +263,46 @@
 
       <!-- Contact Form Section -->
       <section>
-        <div class="contact-card"> <!--start-->
-          <div class="contact-form-header">
-            <h1>Contact Me</h1>
-            <p>
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it.
+        <div class="wrapper">
+          <div class="background-image"><img src="card-cover.png" alt="" />
+            <h1>Contact me</h1>
+            <p>If you have an application you
+              are interested in developing, a feature that you need built or a
+              project that needs coding. I’d love to help with it
             </p>
 
-            <form>
-              <div class="form-controls">
-                <input
-                  type="text"
-                  maxlength="30"
-                  placeholder="Esi Ogagaoghene"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="esi.ogagaoghene@yahoo.com"
-                  required
-                />
-                <textarea 
-                    rows="10" 
-                    cols="20" 
-                    maxlength="500" 
-                    placeholder="Write your message" 
-                    required></textarea>
-
-                <!-- add link here within a div tag -->
-                <div class="get-in-touch">
-                  <ul>
-                    <li><a href="#">Get in Touch</a></li>
-                  </ul>
-                </div>
-              </div>
-            </form>
+            <form
+              action="https://formspree.io/f/xoqrrrbp"
+              method="POST">
+             <div class="form-controls">
+               <input
+                 type="text"
+                 name="text-chars"
+                 maxlength="30"
+                 placeholder="Esi Ogagaoghene"
+                 required
+               />
+               <input
+                 type="email"
+                 name="email-chars"
+                 placeholder="esi.ogagaoghene@yahoo.com"
+                 required
+               />
+               <textarea
+                   rows="10"
+                   cols="20"
+                   name="textarea-chars"
+                   maxlength="500"
+                   placeholder="Write your message"
+                   required></textarea>
+               <div>
+                 <button type="submit" class="form-button">Get In Touch</button>
+               </div>
+               <hr />
+             </div>
+           </form>
           </div>
-         </div>  <!--end-->
+        </div>
       </section>
     </main>
   </body>
