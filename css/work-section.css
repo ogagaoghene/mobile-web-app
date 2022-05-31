@@ -423,11 +423,23 @@ input[type="email"]:hover {
   text-decoration: underline;
 }
 
+button[type="submit"]:active {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+button[type="submit"]:focus {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
 button[type="submit"]:hover {
   box-sizing: border-box;
   color: #396df2;
   border: 1px solid purple;
-  text-decoration: underline;
+  box-shadow: 0 0 5px #fff;
 }
 
 textarea:hover {
