@@ -356,4 +356,35 @@ form > *{
   height: 170px;
 }
 
+.contact-form-header h1:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+.contact-form-header p:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+
+.form-controls input:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+textarea:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+.get-in-touch ul {
+  list-style-type: none;
+}
+.get-in-touch a {
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 100px;
+  border: 1px red solid;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  border-radius: 7px;
+}
+
 
