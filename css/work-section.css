@@ -326,8 +326,34 @@ body {
   width: 375px;
   height: 779px;
 }
-form > * {
+
+.contact-card .contact-form-header  h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  padding: 8px;
+  
+}
+
+form > *{
   display: flex;
   flex-direction: column;
-  border: 1px red solid;
+  padding: 8px;
 }
+
+.form-controls input {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 48px;
+}
+
+.form-controls textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 170px;
+}
+
+
