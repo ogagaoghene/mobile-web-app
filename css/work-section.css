@@ -218,11 +218,14 @@ body {
   width: 140px;
   height: 48px;
   margin: 4px;
+  transition: width 2s, height 2s;
 }
 
 button[type="submit"]:hover {
  background: #6070ff;
  color: #fff;
+ width: 160px;
+ height: 53px;
 }
 
 @media (min-width: 768px) {
