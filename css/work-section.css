@@ -6,7 +6,21 @@
   margin: 0;
 }
 
-ul, li, a {
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 2px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 2px;
+}
+
+a {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
@@ -50,7 +64,6 @@ header nav a:hover {
   text-decoration: underline;
   color: mediumslateblue;
 }
-
 
 .intro-cards {
   display: grid;
@@ -101,7 +114,6 @@ header nav a:hover {
   margin: 0 auto;
   max-width: 1100px;
   background: #fff;
-  border-radius: 24px;
 }
 
 .about-card {
@@ -154,7 +166,7 @@ header nav a:hover {
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 24px;
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   text-align: center;
@@ -164,13 +176,13 @@ header nav a:hover {
 }
 
 .button-styles-2 {
-  background: #4053FC;
+  background: #4053fc;
   color: white;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 24px;
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   text-align: center;
@@ -182,11 +194,16 @@ header nav a:hover {
 .button-styles-2:hover {
   box-sizing: border-box;
   border: 1px solid #6070ff;
-  box-shadow: 0 0 5px #4053FC;
+  box-shadow: 0 0 5px #4053fc;
   outline-color: lightslategray;
 }
 
-.work-section-card img:hover{
+.specials img {
+  width: 48px;
+  height: 48px;
+}
+
+.work-section-card img:hover {
   box-sizing: border-box;
   color: #396df2;
   border: 1px solid #6070ff;
@@ -199,7 +216,6 @@ header nav a:hover {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #344563;
   margin-top: 10px;
@@ -213,13 +229,8 @@ header nav a:hover {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
-}
-
-.specials img {
-  width: 48px;
-  height: 48px;
 }
 
 .contact-card {
@@ -246,7 +257,6 @@ header nav a:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: center;
   color: #fff;
   margin: 4px;
@@ -255,13 +265,10 @@ header nav a:hover {
 .form-styles p {
   color: #ebebff;
   font-family: 'Poppin', sans-serif;
-  font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: center;
-  color: #ebebff;
   padding: 18px;
 }
 
@@ -304,14 +311,11 @@ header nav a:hover {
   width: 140px;
   height: 48px;
   margin: 4px;
-  transition: width 2s, height 2s;
 }
 
 button[type="submit"]:hover {
   background-color: #fff;
- color: #fff;
- width: 160px;
- height: 53px;
+  color: #fff;
 }
 
 .main-content {
@@ -322,7 +326,7 @@ button[type="submit"]:hover {
 .main-content h1 {
   justify-content: center;
   align-items: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -336,7 +340,7 @@ button[type="submit"]:hover {
 .main-content p {
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -355,7 +359,6 @@ button[type="submit"]:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   margin-top: 32px;
   margin-bottom: 40px;
@@ -367,13 +370,31 @@ button[type="submit"]:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   padding-bottom: 28px;
 }
 
+.about-card .flex-left a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px;
+}
+
 .main-content #list a {
   color: #505f79;
+}
+
+.work-section-card span {
+  color: #091e42;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .about-card .flex-left .aboutus-list span {
@@ -407,60 +428,36 @@ button[type="submit"]:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: left;
   color: #091e42;
-  margin-bottom: 18px;
-}
-
-.work-section-card span {
-  color: #091e42;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color:#344563;
-  margin-top: 18px;
   margin-bottom: 18px;
 }
 
 .work-section-card p {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   margin-top: 18px;
   margin-bottom: 18px;
 }
 
 .work-section-card button {
-  color: #396DF2;
+  color: #396df2;
   background: #fff;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 24px;
 }
 
-.work-section-card p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-}
-
-.work-section-card ul, li, a {
+.work-section-card ul {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
-  color:#6070ff;
+  color: #6070ff;
 }
 
 .about-card .flex-left img {
@@ -481,23 +478,13 @@ button[type="submit"]:hover {
 }
 
 .about-card .flex-left p {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #344563;
   margin-top: 28px;
-}
-
-.about-card .flex-left a {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  padding: 10px;
 }
 
 input[type="text"]:hover {
@@ -533,80 +520,69 @@ textarea:hover {
   border: 1px solid blueviolet;
 }
 
-#languages-icon {
-  margin-left: 360px; color:black;
+.languages-icon {
+  margin-left: 360px;
+  color: black;
 }
 
-#framework-icon {
-  margin-left: 360px; color:black;
+.framework-icon {
+  margin-left: 360px;
+  color: black;
   font-size: 8px;
 }
 
-#skills-icon {
-  margin-left: 418px; color:black;
+.skills-icon {
+  margin-left: 418px;
+  color: black;
   font-size: 8px;
 }
 
-/* Mobile styles */
+.flash {
+  animation-name: flash;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+  from { color: red; }
+  to { color: black; }
+}
+
 @media (max-width: 500px) {
-  .work-section-cards {
-    grid-template-columns: 1fr;
-  }
+  .work-section-cards { grid-template-columns: 1fr; }
 
   .work-section-card {
     flex-direction: column;
     width: 100%;
   }
 
-  .about-cards {
-    grid-template-columns: 1fr;
-  }
+  .about-cards { grid-template-columns: 1fr; }
 
   .about-card {
     flex-direction: column;
     width: 100%;
-
   }
 }
 
-/* Desktop styles */
 @media (min-width: 768px) {
+  .work-section-cards { grid-template-columns: 1fr; }
 
-  .work-section-cards {
-    grid-template-columns: 1fr;
-  }
+  .work-section-card { flex-direction: row; }
 
-  .work-section-card {
-    flex-direction: row;
-  }
+  .about-cards { grid-template-columns: 1fr; }
 
-  .about-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .about-card {
-    flex-direction: row;
-
-  }
-
+  .about-card { flex-direction: row; }
 }
 
-/* Large screen styles */
 @media (max-width: 1200px) {
-  .intro-cards {
-    grid-template-columns: 1fr;
-  }
+  .intro-cards { grid-template-columns: 1fr; }
 
-  .intro-card {
-    flex-direction: row;
-  }
+  .intro-card { flex-direction: row; }
 
-  .contact-cards {
-    grid-template-columns: 1fr;
-  }
+  .contact-cards { grid-template-columns: 1fr; }
 
-  .contact-card {
-    flex-direction: row;
-  }
-
+  .contact-card { flex-direction: row; }
 }
