@@ -20,7 +20,8 @@ Portfolio: Mobile Version
 
 
 ## To request a local copy of my project, please follow these steps
-Request this url: https://github.com/ogagaoghene/v1-desktop-version in your web browser. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side. Select download Zip option from drop down menu. Once the download is complete you will be able to access my project locally.
+v2-desktop-version-with-animations
+Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animations in your web browser. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side. Select download Zip option from drop down menu. Once the download is complete you will be able to access my project locally.
 
 ### Prerequisites
 
@@ -37,7 +38,8 @@ Request this url: https://github.com/ogagaoghene/v1-desktop-version in your web 
 
 ## Authors
 
-👤 **Author1**
+👤 **Author1** Esi Ogagaoghene
+👤 **Author1** Tracey Kadenyi
 
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 - Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
