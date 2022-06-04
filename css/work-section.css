@@ -9,39 +9,49 @@
 ul, li, a {
   list-style-type: none;
   text-decoration: none;
+  display: inline-block;
+  padding: 2px 2px;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-.nav-bar {
+header {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  padding: 13px;
 }
 
-.nav-bar a {
+header img {
+  width: 76px;
+  height: 20px;
+  margin-left: 155px;
+  margin-top: 25px;
+}
+
+header nav {
+  margin-left: 30px;
+}
+
+header nav ul {
   display: flex;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  align-items: center;
-  color: #6070ff;
+  list-style: none;
+}
+
+header nav a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
   text-decoration: none;
-  left: 10%;
 }
 
-.fa-bars {
-  color: #6070ff;
-  position: absolute;
-  right: 20px;
+header nav a:hover {
+  text-decoration: underline;
+  color: mediumslateblue;
 }
 
-/* Desktop styles */
+
 .intro-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -49,11 +59,12 @@ body {
   align-items: center;
 }
 
-.work-section cards {
+.work-section-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
   align-items: center;
+  justify-content: center;
 }
 
 .about-cards {
@@ -72,10 +83,14 @@ body {
 
 .intro-card {
   display: flex;
-  border: 2px solid #e7e7e7;
-  border-radius: 2px;
   padding: 0.3rem;
   margin: 10px;
+  background: url('../assets/intro-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-bottom-left-radius: 110px;
+  height: 736px;
 }
 
 .work-section-card {
@@ -83,16 +98,19 @@ body {
   border: 2px solid #e7e7e7;
   border-radius: 2px;
   padding: 0.3rem;
-  margin: 10px;
+  margin: 0 auto;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 24px;
 }
-
 
 .about-card {
   display: flex;
   flex: 1 1 auto;
   border-top-right-radius: 100px;
   padding: 0.3rem;
-  margin: 10px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .about-card > * {
@@ -102,40 +120,106 @@ body {
   width: 50%;
 }
 
-.heading h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  border: 2px solid red;
-  color: red;
-  padding: 20px;
-  margin: 20px;
+.work-section-card:hover {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  box-shadow: 0 0 5px #fff;
 }
 
-.heading p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+.work-section-card img {
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+  color: #396df2;
+  text-decoration: underline;
+}
+
+.anchorstyles {
+  background: #ebebff;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.anchorstyles:hover {
+  box-sizing: border-box;
+  border: 1px solid #396df2;
+  text-decoration: underline;
+}
+
+.button-styles {
+  background-color: #fff;
+  color: #7f8cff;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.03em;
   line-height: 24px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #344563;
+  border: 1px solid #7F8CFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
-.langs h2 {
+.button-styles-2 {
+  background: #4053FC;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  border: 1px solid #7F8CFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.button-styles-2:hover {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  box-shadow: 0 0 5px #4053FC;
+  outline-color: lightslategray;
+}
+
+.work-section-card img:hover{
+  box-sizing: border-box;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 8px;
+}
+
+.langs {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #344563;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.specials {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  border: 2px solid red;
-  color: red;
-  padding: 20px;
-  margin: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  background: #F7F7F9;
+  border-radius: 8px;
+}
+
+.specials img {
+  width: 48px;
+  height: 48px;
 }
 
 .contact-card {
@@ -143,7 +227,10 @@ body {
   border-top-left-radius: 100px;
   padding: 0.3rem;
   margin: 10px;
-  background: #607bff;
+  background: url('../assets/form-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #607bff;
 }
 
 .contact-card > * {
@@ -176,7 +263,6 @@ body {
   text-align: center;
   color: #ebebff;
   padding: 18px;
-  margin
 }
 
 .form-controls input {
@@ -212,7 +298,7 @@ body {
   background-color: #fff;
   color: #6070ff;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 24px;
   width: 140px;
@@ -222,12 +308,268 @@ body {
 }
 
 button[type="submit"]:hover {
- background: #6070ff;
+  background-color: #fff;
  color: #fff;
  width: 160px;
  height: 53px;
 }
 
+.main-content {
+  margin: 5px;
+  padding: 5px;
+}
+
+.main-content h1 {
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #091e42;
+  margin-left: 260px;
+  margin-top: 269px;
+}
+
+.main-content p {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+  margin-left: 260px;
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+
+.main-content span {
+  justify-content: center;
+  align-items: center;
+  margin-left: 260px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.main-content #list {
+  margin-left: 260px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+.main-content #list a {
+  color: #505f79;
+}
+
+.about-card .flex-left .aboutus-list span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 18px;
+}
+
+.social-media-icons {
+  color: #505f79;
+}
+
+.bg-work-sect {
+  background: aliceblue;
+}
+
+.flex-left {
+  margin: 5px;
+  padding: 5px;
+}
+
+.flex-right {
+  margin: 5px;
+  padding: 5px;
+}
+
+.work-section-card .flex-left h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #091e42;
+  margin-bottom: 18px;
+}
+
+.work-section-card span {
+  color: #091e42;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#344563;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.work-section-card p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.work-section-card button {
+  color: #396DF2;
+  background: #fff;
+  border: 1px solid #DFE1E6;
+  border-radius: 24px;
+}
+
+.work-section-card p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.work-section-card ul, li, a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color:#6070ff;
+}
+
+.about-card .flex-left img {
+  width: 100%;
+}
+
+.about-card .flex-right img {
+  width: 100%;
+}
+
+.about-card .flex-left h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #091e42;
+  padding: 2px;
+}
+
+.about-card .flex-left p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #344563;
+  margin-top: 28px;
+}
+
+.about-card .flex-left a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 10px;
+}
+
+input[type="text"]:hover {
+  box-sizing: border-box;
+  color: #396df2;
+  border: 1px solid purple;
+  text-decoration: underline;
+}
+
+input[type="email"]:hover {
+  box-sizing: border-box;
+  color: #396df2;
+  border: 1px solid purple;
+  text-decoration: underline;
+}
+
+button[type="submit"]:active {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+button[type="submit"]:focus {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+textarea:hover {
+  text-decoration: underline;
+  color: #396df2;
+  box-sizing: border-box;
+  border: 1px solid blueviolet;
+}
+
+#languages-icon {
+  margin-left: 360px; color:black;
+}
+
+#framework-icon {
+  margin-left: 360px; color:black;
+  font-size: 8px;
+}
+
+#skills-icon {
+  margin-left: 418px; color:black;
+  font-size: 8px;
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  .work-section-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .work-section-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    flex-direction: column;
+    width: 100%;
+
+  }
+}
+
+/* Desktop styles */
 @media (min-width: 768px) {
 
   .work-section-cards {
@@ -236,7 +578,6 @@ button[type="submit"]:hover {
 
   .work-section-card {
     flex-direction: row;
-    margin: 0 160px;
   }
 
   .about-cards {
@@ -245,13 +586,12 @@ button[type="submit"]:hover {
 
   .about-card {
     flex-direction: row;
-    margin: 0 160px;
+
   }
 
 }
 
-
-
+/* Large screen styles */
 @media (max-width: 1200px) {
   .intro-cards {
     grid-template-columns: 1fr;
@@ -259,7 +599,6 @@ button[type="submit"]:hover {
 
   .intro-card {
     flex-direction: row;
-    margin: 0 160px;
   }
 
   .contact-cards {
@@ -268,7 +607,6 @@ button[type="submit"]:hover {
 
   .contact-card {
     flex-direction: row;
-    margin: 0;
   }
 
 }
