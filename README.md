@@ -41,8 +41,9 @@ https://ogagaoghene.github.io/v1-mobile-web-app/
 
 ## Authors
 
-👤 **Author1** Esi Ogagaoghene
-👤 **Author1** Tracey Kadenyi
+👤 **Author1** 
+Esi Ogagaoghene
+
 
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 - Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
