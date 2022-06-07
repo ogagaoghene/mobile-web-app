@@ -47,9 +47,10 @@ Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animati
 
 
 ## Authors
-
-👤 **Author1** Esi Ogagaoghene
-👤 **Author1** Tracey Kadenyi
+👤 **Author1** 
+  Esi Ogagaoghene
+👤 **Author2** 
+  Ghazanfar Ali
 
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 - Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
