@@ -38,12 +38,21 @@ https://ogagaoghene.github.io/v1-mobile-web-app/
 
 ### Deployment
 
+## Description about Accessibility Features
+
+- Added descriptive Page Title
+- Added alternative attributes for all images
+- Structure headings in order
+- Evaluate the color contrast
+- Resizing working fine
+- For interaction added tabindex to move around page content
+- Evaluate basic structure of the page
 
 ## Authors
-
 👤 **Author1** 
-Esi Ogagaoghene
-
+  Esi Ogagaoghene
+👤 **Author2** 
+  Ghazanfar Ali
 
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 - Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
