@@ -4,7 +4,7 @@ Portfolio: Mobile Version
 
 ## Built With
 
-- html & CSS 
+- html & CSS
 - Frameworks
 - vs code, github, gitbash
 - Figma hi-fi tool
@@ -22,6 +22,9 @@ Portfolio: Mobile Version
 ## To request a local copy of my project, please follow these steps
 v2-desktop-version-with-animations
 Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animations in your web browser. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side. Select download Zip option from drop down menu. Once the download is complete you will be able to access my project locally.
+
+## Links (GitHub Page link for application deploy - v1-desktop-version-with-animations)
+https://ogagaoghene.github.io/v1-mobile-web-app/
 
 ### Prerequisites
 
@@ -44,7 +47,6 @@ Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animati
 - Resizing working fine
 - For interaction added tabindex to move around page content
 - Evaluate basic structure of the page
-
 
 ## Authors
 👤 **Author1** 
