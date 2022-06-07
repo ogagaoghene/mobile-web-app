@@ -35,6 +35,16 @@ Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animati
 
 ### Deployment
 
+## Description about Accessibility Features
+
+- Added descriptive Page Title
+- Added alternative attributes for all images
+- Structure headings in order
+- Evaluate the color contrast
+- Resizing working fine
+- For interaction added tabindex to move around page content
+- Evaluate basic structure of the page
+
 
 ## Authors
 
