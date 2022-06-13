@@ -17,12 +17,16 @@
           <div class="main-content">
             <header>
               <img src="assets/logo.png" alt="Personal Portfolio Site Logo" />
-              <nav role="menu">
-                <ul>
-                  <li><a href="#" tabindex="1">Portfolio</a></li>
-                  <li><a href="#" tabindex="2">About</a></li>
-                  <li><a href="#" tabindex="3">Contact</a></li>
+              <nav id="navbar">
+                <ul class="nav-menu">
+                  <li class="nav-item"><a href="#" tabindex="1" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="#" tabindex="2" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#" tabindex="3" class="nav-link">Contact</a></li>
                 </ul>
+                <!-- Hamburger icon here -->
+                <a href="#navbar" class=""hamburger" aria-label="Open main menu">
+                  <i class="fas fa-bars" aria-hiiden="true"></i>
+                </a>
               </nav>
             </header>
             <h1 class="flash">
@@ -224,5 +228,9 @@
           </div>
         </div>
       </section>
+
+      <!-- Add Javascript file here -->
+      <script src="main.js"></script>
+
   </body>
 </html>
