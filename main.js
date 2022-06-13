@@ -4,16 +4,21 @@ const body = document.querySelectorAll('.intro-card,.intro-cards');
 
 const mobileMenu = () => {
     hamburger.classList.toggle("active");
-    hamburger.innerHTML = "<i class='fas fa-times'></i>";
+    if(hamburger.classList.contains("active")){
+        
+    hamburger.innerHTML = '<i class="fas fa-times"  style="color:#fff"></i>';
+}else{
+    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+}
     navMenu.classList.toggle("active");
     body.forEach(n=> n.classList.toggle("bgcolor"));
 
 }
 
 const closeMenu = () => {
-    hamburger.classList.remove("active");
     hamburger.innerHTML = "<i class='fas fa-bars'></i>";
     navMenu.classList.remove("active");
+    hamburger.classList.remove("active");
     body.forEach(n=> n.classList.remove("bgcolor"))
 }
 
