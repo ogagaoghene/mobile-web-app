@@ -6,21 +6,7 @@
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 2px 2px;
-}
-
-li {
-  list-style-type: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 2px 2px;
-}
-
-a {
+ul, li, a {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
@@ -63,6 +49,11 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: mediumslateblue;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
 }
 
 .intro-cards {
@@ -549,6 +540,27 @@ textarea:hover {
 @keyframes flash {
   from { color: red; }
   to { color: black; }
+}
+
+.hamburger {
+  display: none;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 500px) {
