@@ -659,4 +659,7 @@ textarea:hover {
   width: 100%;
 }
 
+.active {
+  display: block; 
+}
 }
