@@ -590,76 +590,110 @@ textarea:hover {
     text-align: center;
     transition: 0.3s;
   }
+
   header img {
     width: 76px;
     height: 20px;
     margin-left: 5px;
     margin-top: 25px;
-}
+  }
+
   .hamburger {
     display: block;
     cursor: pointer;
   }
+
   .intro-card {
     display: flex;
     width: 100%;
     padding: 0.3rem;
     margin: 10px;
-}
-.main-content h1 {
-  margin-left: 0;
-  margin-top: 115px;
-}
-.main-content p {
-  margin-left: 0;
-  margin-top: 0;
-}
-.main-content span {
-  margin-left: 0;
-  margin-top: 0;
-}
-.main-content #list {
-  margin-left: 0;
- 
-}
-.work-section-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 4rem;
-  align-items: center;
-  justify-content: center;
-}
-.work-section-card {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #e7e7e7;
-  border-radius: 2px;
-  padding: 0.3rem;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1100px;
-  background: #fff;
-}
-.flex-left img{
- max-width: 80%;
-}
-.flex-right img{
-  max-width: 80%;
- }
+  }
 
- .about-card {
-  flex-direction: column;
-  width: 100%;
-}
-.about-card>* {
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-}
+  .main-content h1 {
+    margin-left: 0;
+    margin-top: 115px;
+  }
 
-.active {
-  display: block; 
-}
+  .main-content p {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .main-content span {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .main-content #list {
+    margin-left: 0;
+
+  }
+
+  .work-section-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-section-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e7e7e7;
+    border-radius: 2px;
+    padding: 0.3rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1100px;
+    background: #fff;
+  }
+
+  .flex-left img {
+    max-width: 80%;
+  }
+
+  .flex-right img {
+    max-width: 80%;
+  }
+
+  .about-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-card>* {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .active {
+    float: inherit;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: start;
+    left: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .bgcolor {
+    background: #6070ff;
+   
+  }
+
+
+  .active li a{
+    color: #fff;
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
