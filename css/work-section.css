@@ -35,6 +35,11 @@ header nav {
   margin-left: 30px;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
@@ -53,11 +58,6 @@ header nav a:hover {
   color: mediumslateblue;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
 .intro-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -72,6 +72,17 @@ nav ul {
   grid-gap: 4rem;
   align-items: center;
   justify-content: center;
+}
+
+.work-section-card {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #e7e7e7;
+  border-radius: 2px;
+  padding: 0.3rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  background: #fff;
 }
 
 .about-cards {
@@ -101,25 +112,16 @@ nav ul {
   height: 736px;
 }
 
-.work-section-card {
-  display: flex;
-  border: 2px solid #e7e7e7;
-  border-radius: 2px;
-  padding: 0.3rem;
-  margin: 0 auto;
-  max-width: 1100px;
-  background: #fff;
-}
-
 .about-card {
   display: flex;
+  flex-direction: row;
   flex: 1 1 auto;
   border-top-right-radius: 100px;
   padding: 0.3rem;
   max-width: 1100px;
 }
 
-.about-card>* {
+.about-card > * {
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -238,7 +240,7 @@ nav ul {
   background-color: #607bff;
 }
 
-.contact-card>* {
+.contact-card > * {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -550,7 +552,6 @@ textarea:hover {
   }
 }
 
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -563,25 +564,7 @@ textarea:hover {
   transition: 0.3s;
 }
 
-.work-section-cards {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.work-section-card {
-  flex-direction: row;
-}
-
-.about-cards {
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-card {
-  flex-direction: row;
-}
-
 @media (max-width: 768px) {
-
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -627,7 +610,6 @@ textarea:hover {
 
   .main-content #list {
     margin-left: 0;
-
   }
 
   .work-section-cards {
@@ -664,7 +646,7 @@ textarea:hover {
     width: 100%;
   }
 
-  .about-card>* {
+  .about-card > * {
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -684,13 +666,11 @@ textarea:hover {
 
   .bgcolor {
     background: #6070ff;
-   
   }
 
-
-  .active li a{
+  .active li a {
     color: #fff;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
