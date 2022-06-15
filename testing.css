@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
 }
 
 .modal-header .title {
@@ -61,3 +60,90 @@
     opacity: 1;
     pointer-events: 1;
 }
+
+.work-section-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+.work-section-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e7e7e7;
+    border-radius: 2px;
+    padding: 0.3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+    background: #fff;
+  }
+  .work-section-card:hover {
+    box-sizing: border-box;
+    border: 1px solid #6070ff;
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .work-section-card img {
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    color: #396df2;
+    text-decoration: underline;
+  }
+  .work-section-card img:hover {
+    box-sizing: border-box;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 8px;
+  }
+  .work-section-card span {
+    color: #091e42;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .work-section-card .flex-left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    color: #091e42;
+    margin-bottom: 18px;
+  }
+  
+  .work-section-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .work-section-card button {
+    color: #396df2;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+  
+  .work-section-card ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #6070ff;
+  }
+  .flex-left img {
+   max-width: 80%;
+  }
