@@ -80,17 +80,56 @@ function loadCards() {
 
 loadCards();
 
+function loadModal(id){
+  id = 0;
+  let project = cards[id];
+  //let moodal = '';
+  let modal_html = `<div id="modal" class="modal">
+  <div class="modal-header">
+    <div class="title">${project.project_title}</div>
+    <button id="close-button" class="close-button">&times;</button>
+  </div>
+  <div class="work-section-card">
+    <div class="flex-left">
+      <span>
+        <strong>${project.company}
+        </strong>&nbsp; </span> &nbsp; <img src="assets/dot.png" alt="" /><span>&nbsp; ${project.dev_title} &nbsp; </span><img
+        src="assets/dot.png" alt="" />&nbsp; ${project.date}<span></span>
+      <img src="${project.img}" alt="Nature image" />
+    </div>
+    <div>
+      <div class="break">&nbsp;</div>
+      <p>
+        ${project.description}
+      </p>
+      <ul class="frame">
+        <li><a href="#" class="anchorstyles">html</a></li>
+        <li><a href="#" class="anchorstyles">CSS</a></li>
+        <li><a href="#" class="anchorstyles">JavaScript</a></li>
+      </ul>
+      <div class="break"></div>
+
+      <div class="button-frame">
+        <button class="button-styles">See Live <i class="fa-regular fa-circle-up"></i></button>
+        <button class="button-styles">See Source <i class="fab fa-github"></i></button>
+      </div>
+    </div>
+  </div>
+</div>`
+let body_container = document.getElementById("body");
+body_container.innerHTML = modal_html;
+}
+
 const openModalButtons = document.querySelectorAll('.button-styles');
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    openModal(modal);
+    openModal();
   })
 })
 
-const openModal = function(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
+const openModal = function() {
+  loadModal();
 }
 
 // Close pop-window function implementation 
