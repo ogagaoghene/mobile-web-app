@@ -1,4 +1,4 @@
-const openModalButtons = document.querySelectorAll('.button-styles-2');
+const openModalButtons = document.querySelectorAll('.button-styles');
 const closeModalButtons = document.querySelectorAll('.button-styles-2');
 const cards_container = document.getElementById("work-section");
 
@@ -44,7 +44,8 @@ let cards = [
 ];
 
 function loadCards() {
-  let card_html = '';
+  let card_html = ''; /** created an empty string as placeholder */
+
   for (let card_index = 0; card_index < cards.length; card_index++) {
     let html = `<div class="work-section-card">
   <div class="flex-left">
@@ -61,46 +62,32 @@ function loadCards() {
     </p>
     <ul>
       <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[1]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[2]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[3]}</a></li>
     </ul>
     <div class="break"></div>
-    <ul>
-      <li><a href="#" class="button-styles">See Project</a></li>
-    </ul>
+    
+    <div>
+      <button id="button-styles" class="button-styles">See Projects</button>
+    </div>
+
   </div>
 </div>`
-    console.log(card_html);
     card_html+=html;
   }
   cards_container.innerHTML = card_html;
 }
-/** Implement function here  */
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector( /**required value should be added here */);
-    openModal(modal);
-  })
-});
+function saySomething() {
+  console.log('I am available')
+}
 
-closeModalButtons.forEach(button => {
+openModalButtons.forEach( (button) => {
   button.addEventListener('click', () => {
-    /** Add whatever is required here to implement this requirement */
+    button.classList.add('active');
+    saySomething();
   })
 })
-
-const openModal = (modal) => {
-  if (modal == null) return;
-  modal.classList.add('active');
-  // add whatever is required 
-}
-
-const closeModal = (modal) => {
-  if (modal == null) return
-  modal.classList.remove('active');
-  // add whatever is required
-}
 
 loadCards();
