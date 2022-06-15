@@ -1,4 +1,3 @@
-const openModalButtons = document.querySelectorAll('.button-styles');
 const closeModalButtons = document.querySelectorAll('.button-styles-2');
 const cards_container = document.getElementById("work-section");
 
@@ -79,15 +78,23 @@ function loadCards() {
   cards_container.innerHTML = card_html;
 }
 
-function saySomething() {
-  console.log('I am available')
-}
+loadCards();
 
-openModalButtons.forEach( (button) => {
+const openModalButtons = document.querySelectorAll('.button-styles');
+
+openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    button.classList.add('active');
-    saySomething();
+    openModal(modal);
   })
 })
 
-loadCards();
+const openModal = function(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+}
+
+// Close pop-window function implementation 
+const closeModal = function(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+}
