@@ -1,47 +1,48 @@
 const openModalButtons = document.querySelectorAll('.button-styles-2');
 const closeModalButtons = document.querySelectorAll('.button-styles-2');
 const cards_container = document.getElementById("work-section");
-console.log(cards_container.className)
 
-let cards =[{
-  img: '/assets/1.png',
-  project_title: 'TONIC',
-  company:'CANOPY',
-  dev_title:'BackEndDev',
-  date:'2015',
-  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  skills:['html','Ruby on rails','css','Javascript']
-},
-{
-  img: 'assets/1.png',
-  project_title: 'TONIC',
-  company:'CANOPY',
-  dev_title:'BackEndDev',
-  date:'2015',
-  description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  skills:['html','Ruby on rails','css','Javascrip']
-}
+let cards = [
+  {
+    img: '/assets/1.png',
+    project_title: 'TONIC',
+    company: 'CANOPY',
+    dev_title: 'BackEndDev',
+    date: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
+  },
+  {
+    img: '/assets/1.png',
+    project_title: 'TONIC',
+    company: 'CANOPY',
+    dev_title: 'BackEndDev',
+    date: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
+  }
 ];
 
-function loadCards (){
-
-for(let card in cards){
-  let card_html = `<div class="work-section-card">
+function loadCards() {
+  for (let card_index = 0; card_index < cards.length; ++card_index) {
+    let card_html = `<div class="work-section-card">
   <div class="flex-left">
-    <img src="${card.img}" alt="Nature image" />
+    <img src="${cards[card_index].img}" alt="Nature image" />
   </div>
   <div class="flex-right">
-    <h2>${card.project_title}</h2>
+    <h2>${cards[card_index].project_title}</h2>
     <div class="break">&nbsp;</div>
-    <span><strong>${card.company} </strong>&nbsp; </span> &nbsp;  <img src="assets/dot.png" alt="" /><span>&nbsp; ${card.dev_title} &nbsp; </span><img src="assets/dot.png" alt="" />&nbsp; <span>${card.date}</span>
+    <span>
+    <strong>${cards[card_index].company} 
+    </strong>&nbsp; </span> &nbsp;  <img src="assets/dot.png" alt="" /><span>&nbsp; ${cards[card_index].dev_title} &nbsp; </span><img src="assets/dot.png" alt="" />&nbsp; <span>${cards[card_index].date}</span>
     <p>
-     ${card.description}
+     ${cards[card_index].description}
     </p>
     <ul>
-      <li><a href="#" class="anchorstyles">${card.skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${card.skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${card.skills[0]}</a></li>
-      <li><a href="#" class="anchorstyles">${card.skills[0]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
+      <li><a href="#" class="anchorstyles">${cards[card_index].skills[0]}</a></li>
     </ul>
     <div class="break"></div>
     <ul>
@@ -49,9 +50,9 @@ for(let card in cards){
     </ul>
   </div>
 </div>`
-console.log(card_html);
-  cards_container.innerHTML = card_html;
-}
+    console.log(card_html);
+    cards_container.innerHTML = card_html;
+  }
 }
 /** Implement function here  */
 
