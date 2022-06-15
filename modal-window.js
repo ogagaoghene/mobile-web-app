@@ -4,7 +4,7 @@ const cards_container = document.getElementById("work-section");
 
 let cards = [
   {
-    img: '/assets/1.png',
+    img: 'assets/1.png',
     project_title: 'TONIC',
     company: 'CANOPY',
     dev_title: 'BackEndDev',
@@ -13,7 +13,27 @@ let cards = [
     skills: ['html', 'Ruby on rails', 'css', 'Javascript']
   },
   {
-    img: '/assets/1.png',
+    img: 'assets/2.png',
+    project_title: 'TONIC',
+    company: 'CANOPY',
+    dev_title: 'BackEndDev',
+    date: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
+  }
+  ,
+  {
+    img: 'assets/3.png',
+    project_title: 'TONIC',
+    company: 'CANOPY',
+    dev_title: 'BackEndDev',
+    date: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
+  }
+  ,
+  {
+    img: 'assets/4.png',
     project_title: 'TONIC',
     company: 'CANOPY',
     dev_title: 'BackEndDev',
@@ -24,8 +44,9 @@ let cards = [
 ];
 
 function loadCards() {
-  for (let card_index = 0; card_index < cards.length; ++card_index) {
-    let card_html = `<div class="work-section-card">
+  let card_html = '';
+  for (let card_index = 0; card_index < cards.length; card_index++) {
+    let html = `<div class="work-section-card">
   <div class="flex-left">
     <img src="${cards[card_index].img}" alt="Nature image" />
   </div>
@@ -51,8 +72,9 @@ function loadCards() {
   </div>
 </div>`
     console.log(card_html);
-    cards_container.innerHTML = card_html;
+    card_html+=html;
   }
+  cards_container.innerHTML = card_html;
 }
 /** Implement function here  */
 
