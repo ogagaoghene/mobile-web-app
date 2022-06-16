@@ -60,6 +60,10 @@
   box-shadow: 0 0 5px #fff;
 }
 
+.pic img {
+  width: 100%;
+}
+
 .row .left_div img {
   border-radius: 8px;
   border: 1px solid lightgrey;
@@ -164,32 +168,34 @@
   box-shadow: 0 0 5px #4053fc;
   outline-color: lightslategray;
 }
+
 .right-container {
   display: flex;
   justify-content: space-between;
 }
-.right-container p{
+
+.right-container p {
   width: 50%;
 }
 
-.skills-list{
+.skills-list {
   width: 50%;
-}
-.pic img{
-  width: 100%;
 }
 
 @media (max-width: 768px) {
-  .work-section-cards, .row {
+  .work-section-cards,
+  .row {
     flex-direction: column;
     flex: 1;
     height: 100%;
   }
+
   .right-container {
     display: flex;
     flex-direction: column;
   }
-  .button-frame{
-flex-direction: column;
+
+  .button-frame {
+    flex-direction: column;
   }
 }
