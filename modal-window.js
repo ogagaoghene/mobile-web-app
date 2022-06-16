@@ -7,7 +7,7 @@ const cards = [
     company: 'CANOPY',
     dev_title: 'BackEndDev',
     date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente quod corporis voluptate praesentium adipisci nisi fuga quaerat.',
     skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
   },
   {
@@ -16,7 +16,7 @@ const cards = [
     company: 'CANOPY',
     dev_title: 'BackEndDev',
     date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente quod corporis voluptate praesentium adipisci nisi fuga quaerat.',
     skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
   },
   {
@@ -25,7 +25,7 @@ const cards = [
     company: 'CANOPY',
     dev_title: 'BackEndDev',
     date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente quod corporis voluptate praesentium adipisci nisi fuga quaerat.',
     skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
   },
   {
@@ -34,7 +34,7 @@ const cards = [
     company: 'CANOPY',
     dev_title: 'BackEndDev',
     date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente quod corporis voluptate praesentium adipisci nisi fuga quaerat.',
     skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
   },
 ];
@@ -85,7 +85,7 @@ function loadModal(id) {
   const modalHtml = `
   <div classs="wrapper">
     <div class="modal-body">
-    <div class="title">${project.project_title} <i class="fas fa-times close-button"></i></div>
+    <div class="title"><h1>${project.project_title} </h1><i class="fas fa-times close-button"></i></div>
       
     <span><strong>${project.company}</strong>&nbsp;</span> &nbsp; <img src="assets/dot.png" alt="dot icon" /> &nbsp; <span>&nbsp; ${project.dev_title} &nbsp; </span>
     <img src="assets/dot.png" alt="" />&nbsp; ${project.date}<span></span>
