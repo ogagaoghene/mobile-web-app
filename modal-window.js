@@ -85,9 +85,9 @@ function loadModal(id) {
   const modalHtml = `
   <div classs="wrapper">
     <div class="modal-body">
-    <div class="title"><h1>${project.project_title} </h1><i class="fas fa-times close-button"></i></div>
-      
-    <span><strong>${project.company}</strong>&nbsp;</span> &nbsp; <img src="assets/dot.png" alt="dot icon" /> &nbsp; <span>&nbsp; ${project.dev_title} &nbsp; </span>
+    <div class="title"><span class="span-left">${project.project_title} <i class="fas fa-times close-button icon-size"></i></span></div>
+    <div>&nbsp;</div>
+    <span class="canopy-span"><strong>${project.company}</strong>&nbsp;</span> &nbsp; <img src="assets/dot.png" alt="dot icon" /> &nbsp; <span>&nbsp; ${project.dev_title} &nbsp; </span>
     <img src="assets/dot.png" alt="" />&nbsp; ${project.date}<span></span>
       <div class="pic">
         <img src="${project.img}" alt="Nature image" />
