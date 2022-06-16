@@ -18,7 +18,8 @@
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 600px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 0.5rem;
   height: 100%;
 }
@@ -138,6 +139,7 @@
 }
 
 .button-frame {
+  display: flex;
   padding: 10px;
 }
 
@@ -162,11 +164,32 @@
   box-shadow: 0 0 5px #4053fc;
   outline-color: lightslategray;
 }
+.right-container {
+  display: flex;
+  justify-content: space-between;
+}
+.right-container p{
+  width: 50%;
+}
+
+.skills-list{
+  width: 50%;
+}
+.pic img{
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   .work-section-cards, .row {
     flex-direction: column;
     flex: 1;
     height: 100%;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-frame{
+flex-direction: column;
   }
 }

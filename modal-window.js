@@ -89,21 +89,21 @@ function loadModal(id) {
       
     <span><strong>${project.company}</strong>&nbsp;</span> &nbsp; <img src="assets/dot.png" alt="dot icon" /> &nbsp; <span>&nbsp; ${project.dev_title} &nbsp; </span>
     <img src="assets/dot.png" alt="" />&nbsp; ${project.date}<span></span>
-      <div>
+      <div class="pic">
         <img src="${project.img}" alt="Nature image" />
-        <p>${project.description}</p>
       </div>
-
-      <div>
+      <div class="right-container">
+      <p>${project.description}</p>
+      <div class="skills-list">
         <ul>
           <li><a href="#" class="anchorstyles">html</a></li>
           <li><a href="#" class="anchorstyles">css</a></li>
           <li><a href="#" class="anchorstyles">javascript</a></li>
         </ul>
-
         <div class="button-frame">
           <button class="button-styles">See Live <i class="fa-regular fa-circle-up"></i></button>
           <button class="button-styles">See Source <i class="fab fa-github"></i></button>
+       </div>
        </div>
       </div>
       
