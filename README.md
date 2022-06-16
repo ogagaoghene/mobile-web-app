@@ -26,17 +26,6 @@ Request this url: https://github.com/ogagaoghene/v1-desktop-version-with-animati
 ## Links (GitHub Page link for application deploy - v1-desktop-version-with-animations)
 https://ogagaoghene.github.io/v1-mobile-web-app/
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 ## Description about Accessibility Features
 
@@ -52,7 +41,7 @@ https://ogagaoghene.github.io/v1-mobile-web-app/
 👤 **Author1** 
   Esi Ogagaoghene
 👤 **Author2** 
-  Ghazanfar Ali
+  Hamma Alamin
 
 - GitHub: [@githubhandle](https://github.com/ogagaoghene)
 - Twitter: [@twitterhandle](https://twitter.com/@esi_ogaga)
