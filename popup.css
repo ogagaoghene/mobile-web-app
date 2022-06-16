@@ -42,32 +42,31 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
-  left: 0px;
+  letter-spacing: 0;
+  left: 0;
   top: 2px;
-  color: #172b4d;;
+  color: #172b4d;
   width: 259px;
   height: 36px;
   display: inline;
   text-align: right;
 }
 
-span-left {
+.span-left {
   text-align: left;
   border: 1px solid red;
 }
 
 .canopy-span {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   background: #344563;
   width: 55px;
   height: 16px;
-  background: #344563;
 }
 
 .icon-size {
