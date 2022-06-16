@@ -120,7 +120,7 @@
 }
 
 .pic img {
-  max-width: 500px;
+  width: 100%;
   margin-top: 16px;
 }
 
@@ -241,6 +241,7 @@
 
 .skills-list {
   display: flex;
+  flex-direction: column;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 500;
@@ -248,10 +249,7 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: #6070FF;
-  height: 16px;
   width: 50%;
-  left: 12px;
-  top: 4px;
 }
 
 @media (max-width: 768px) {

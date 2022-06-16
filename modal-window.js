@@ -94,7 +94,7 @@ function loadModal(id) {
       </div>
       <div class="right-container">
       <p class="text-description">${project.description}</p>
-      <div class="skills-list">
+      <div class="skills-list row">
         <ul>
           <li><a href="#" class="anchorstyles">html</a></li>
           <li><a href="#" class="anchorstyles">css</a></li>
