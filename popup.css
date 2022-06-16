@@ -38,8 +38,21 @@
 }
 
 .title {
-  
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 36px;
+  width: 259px;
+  left: 0px;
+  top: 2px;
+  color: #172B4D;
+  width: 259px;
+  height: 36px;
 }
+
 
 .show-modal {
   opacity: 1;
