@@ -1,22 +1,16 @@
-//const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const myContactForm = document.getElementById('form-button');
+let errorMessage = '';
 
-const form = document.getElementById('form-button');
-
-form.addEventListener("click", function (event) {
-    const email = document.getElementById('email-field');
-    const emailValue = email.value;
- if(emailValue.toLowerCase() != emailValue) {
-    let error_message = "Error: form is not sent. Make sure the email is in lowercase"
-    form.setCustomValidity(error_message);
-    form.reportValidity();
-    return;
-}else{
-    let error_message = ""
-    email.setCustomValidity(error_message);
-    email.reportValidity(); 
-}
-console.log(emailValue);
-console.log(emailValue.toLowerCase());
-}
-
-)
+const validateEmail = => {
+  mycontactForm.addEventListener('click', (event) => {
+    const emailValue = document.getElementById('email-field').value;
+    if (emailValue.toLowerCase() != emailValue) {
+      errorMessage = 'Error: form is not sent. Make sure the email is in lowercase';
+      myContactForm.setCustomValidity(error_message);
+      myContactForm.reportValidity();
+      return false;
+    }
+    emailValue.setCustomValidity(errorMessage);
+    emailValue.reportValidity();
+  });
+};
