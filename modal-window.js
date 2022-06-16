@@ -106,12 +106,7 @@ function loadModal(id) {
        </div>
        </div>
       </div>
-      
-
-     
-
     </div>
-
   </div>`;
   const bodyContainer = document.getElementById('modal');
   bodyContainer.innerHTML = modalHtml;
