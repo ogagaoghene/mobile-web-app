@@ -146,10 +146,9 @@ header nav a:hover {
 
 .anchorstyles {
   background: #ebebff;
-  color: #6070ff;;
+  color: #6070ff;
   padding: 0 5px;
   border-radius: 5%;
-
 }
 
 .anchorstyles:hover {
@@ -441,6 +440,7 @@ button[type="submit"]:hover {
   color: #6070ff;
   padding: 0 12px;
 }
+
 .row li {
   color: #6070ff;
 }
