@@ -20,4 +20,3 @@ function validateEmail() {
 }
 
 submit.addEventListener('click', validateEmail);
-
