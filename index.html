@@ -136,23 +136,23 @@
                 If you have an application you are interested in developing, <br /> a feature that you need built or a project <br /> 
                  that needs coding. I’d love to help with it 
               </p>
-              <form name="contact-form" class="form-controls" id="contact-form">
+              <form name="form" class="form-controls" id="form">
                 <label for="name-field">&nbsp;</label>
                 <input type="text" id="name-field" name="NAME" placeholder="Esi Ogagaoghene"  aria-label="Name" tabindex="4" required/>
                 <div class="break"></div>
                 <label for="email-field">&nbsp;</label>
-                <input type="email" id="email-field" name="EMAIL" placeholder="esi.ogagaoghene@yahoo.com" tabindex="5" aria-label="Email" required/>
+                <input type="email" id="email" name="email" placeholder="esi.ogagaoghene@yahoo.com" tabindex="5" aria-label="Email" required/>
                 <div class="break"></div>
                 <label for="comment-field">&nbsp;</label>
                 <textarea rows="4" cols="10" id="comment-field" name="COMMENT" placeholder="Write your message" tabindex="6" aria-label="C" required></textarea>
               </form>
-              <button type="submit" name="bttn-submit" id="form-button" class="form-button" tabindex="7" onClick="checkInput()">Get In Touch</button>
+              <button type="submit" name="submit" id="submit" class="form-button" tabindex="7">Get In Touch</button>
+              <div><span role="alert" id="err" name="err" aria-hidden="true"></span></div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Add Javascript file here -->
       <script src="main.js"></script>
       <script src="modal-window.js"></script>
       <script src="email_validation.js"></script>

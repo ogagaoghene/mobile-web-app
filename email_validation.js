@@ -1,11 +1,22 @@
-function checkInput() {
-  let strTemp = '';
-  let lowerCaseString = '';
+const submit = document.getElementById('submit');
+const emailError = document.getElementById('err');
+let errorMessage = '';
 
-  strTemp = document.forms['contact-form'].EMAIL.value; 
-
-  lowerCaseString = String(strTemp).toLowerCase();
-
-  console.log(strTemp);
-  console.log(lowerCaseString);
+function isLowerCase(characters) {
+  return characters === characters.toLowerCase() && characters !== characters.toUpperCase();
 }
+
+function validateEmail() {
+  let emailValue = '';
+  const email = document.getElementById('email');
+  emailValue = email.value;
+
+  if (isLowerCase(String(emailValue))) {
+    emailError.textContent = '';
+  } else {
+    errorMessage = 'Form not sent. Please enter email in lowercase';
+    emailError.textContent = errorMessage;
+  }
+}
+
+submit.addEventListener('click', validateEmail);
