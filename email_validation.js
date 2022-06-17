@@ -2,6 +2,8 @@ const submit = document.getElementById('submit');
 const emailError = document.getElementById('err');
 let errorMessage = '';
 
+submit.addEventListener('click', validateEmail);
+
 function isLowerCase(characters) {
   return characters === characters.toLowerCase() && characters !== characters.toUpperCase();
 }
@@ -19,4 +21,4 @@ function validateEmail() {
   }
 }
 
-submit.addEventListener('click', validateEmail);
+
